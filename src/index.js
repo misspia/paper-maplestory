@@ -7,6 +7,7 @@ import Stage from './screens/stage/stage.jsx'
 
 const Container = styled.main`
     font-family: ${Fonts.familyBody};
+    font-size: 1em;
 `;
 
 class App extends Component {
