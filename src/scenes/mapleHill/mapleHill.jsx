@@ -7,6 +7,9 @@ import {
 
 import Layers from './mapleHill.layers.js'
 
+// https://andwecode.com/creating-animated-banner-with-parallax-js/
+// http://matthew.wagerfield.com/parallax/
+
 class MapleHill extends Component {
   constructor(props) {
     super(props);
@@ -29,10 +32,18 @@ class MapleHill extends Component {
   }
   render() {
     return <SceneContainer innerRef={ ref => this.container = ref}>
-        <Layer1 data-depth='0.9'>Maple Hill</Layer1>
-        <Layer2 data-depth='0.8'>Tree</Layer2>
-        <Layer3 data-depth='0.7'>Hill</Layer3>
-        <Layer4 data-depth='0.5'>Character</Layer4>
+        <Layer1 data-depth='0.9'>
+          <div>background</div>
+        </Layer1>
+        <Layer2 data-depth='0.8'>
+          <div>hill</div>
+        </Layer2>
+        <Layer3 data-depth='0.7'>
+          <div>mid scene</div>
+        </Layer3>
+        <Layer4 data-depth='0.5'>
+          <div>foreground</div>
+        </Layer4>
     </SceneContainer>
   }
 }

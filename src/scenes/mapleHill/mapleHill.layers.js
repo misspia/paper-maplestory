@@ -1,6 +1,7 @@
 const Layers = [
   {
-    depth: 0.1
+    depth: 0.1,
+    // component: 
   }
 
 
