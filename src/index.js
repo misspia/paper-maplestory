@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
+import AppRouter from './router/router.jsx'
+
 import styled from 'styled-components'
 import { Fonts } from './themes/themes.js'
 
@@ -10,12 +12,12 @@ const Container = styled.main`
     font-size: 1em;
 `;
 
-class App extends Component {
-  render() {
-    return <Container>
-      <Stage />
-    </Container>
-  }
-}
+// class App extends Component {
+//   render() {
+//     return <Container>
+//       <Stage />
+//     </Container>
+//   }
+// }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<AppRouter />, document.getElementById('app'));
