@@ -5,7 +5,7 @@ import {
   Layer1, Layer2, Layer3, Layer4
 } from './mapleHill.styles.js'
 
-import Layers from './mapleHill.layers.js'
+import Layers from './layers/layers.js'
 
 // https://andwecode.com/creating-animated-banner-with-parallax-js/
 // http://matthew.wagerfield.com/parallax/
